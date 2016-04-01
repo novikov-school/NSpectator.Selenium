@@ -1,0 +1,6 @@
+language: csharp
+solution: NSpectator.Selenium.sln
+install:
+  - nuget restore NSpectator.Selenium.sln
+script:
+  - xbuild /p:Configuration=Debug NSpectator.Selenium.sln
