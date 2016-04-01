@@ -2,7 +2,7 @@
 
 [![Join the chat at https://gitter.im/nspectator/NSpectator](https://badges.gitter.im/nspectator/NSpectator.svg)](https://gitter.im/nspectator/NSpectator?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![Build Status](https://travis-ci.org/nspectator/NSpectator.Selenium.svg?branch=master)](https://travis-ci.org/nspectator/NSpectator.Selenium)
-[![Dependencies status](https://img.shields.io/badge/dependencies-up--to--date-brightgreen.svg)](https://github.com/nspectator/NSpectator/blob/master/src/OpenQA.Selenite/packages.config)
+[![Dependencies status](https://img.shields.io/badge/dependencies-up--to--date-brightgreen.svg)](https://github.com/nspectator/NSpectator.Selenium/blob/master/src/OpenQA.Selenite/packages.config)
 [![Youtrack](https://img.shields.io/badge/issues-youtrack-orange.svg)](https://nspectator.myjetbrains.com)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/nspectator/NSpectator.Selenium/master/license.txt)
 
