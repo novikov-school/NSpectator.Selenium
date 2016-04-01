@@ -91,9 +91,9 @@
     <Compile Include="Implementation\NumericFieldTests.cs" />
     <Compile Include="Implementation\RadioButtonTests.cs" />
     <Compile Include="Implementation\SelectBoxTests.cs" />
-    <Compile Include="Implementation\TableTests\Given_complex_table.cs" />
-    <Compile Include="Implementation\TableTests\Given_generic_table.cs" />
-    <Compile Include="Implementation\TableTests\Given_table.cs" />
+    <Compile Include="Specs\Pages\TableTests\Given_complex_table.cs" />
+    <Compile Include="Specs\Pages\TableTests\Given_generic_table.cs" />
+    <Compile Include="Specs\Pages\TableTests\Given_table.cs" />
     <Compile Include="Implementation\TestFieldTests.cs" />
     <Compile Include="KeyTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

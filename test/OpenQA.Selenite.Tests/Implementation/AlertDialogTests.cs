@@ -9,8 +9,8 @@ using OpenQA.Selenite.Setup.Environments;
 namespace OpenQA.Selenite.Tests.Implementation
 {
     // ReSharper disable InconsistentNaming
-
-    [TestFixture]
+    
+    [TestFixture(Ignore = true)]
     public class Given_dialogs : HostThreadedSessionFixture
     {
         public override void Before()

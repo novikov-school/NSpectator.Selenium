@@ -1,13 +1,13 @@
 using System.Linq;
 using FluentAssertions;
 using NUnit.Framework;
-using OpenQA.Selenite.Tests.Shared.Hosting;
-using OpenQA.Selenite.Tests.Shared.Pages.Implementation;
 using OpenQA.Selenite.Extensions;
 using OpenQA.Selenite.Setup;
 using OpenQA.Selenite.Setup.Environments;
+using OpenQA.Selenite.Tests.Shared.Hosting;
+using OpenQA.Selenite.Tests.Shared.Pages.Implementation;
 
-namespace OpenQA.Selenite.Tests.Implementation.TableTests
+namespace OpenQA.Selenite.Tests.Specs.Pages.TableTests
 {
     public class TableRow
     {
@@ -20,7 +20,7 @@ namespace OpenQA.Selenite.Tests.Implementation.TableTests
 
     // ReSharper disable InconsistentNaming
 
-    [TestFixture]
+    [TestFixture(Ignore = true)]
     public class Given_table : HostThreadedSessionFixture
     {
         public override void Before()
