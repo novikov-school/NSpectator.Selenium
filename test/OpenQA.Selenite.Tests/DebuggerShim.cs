@@ -1,20 +1,20 @@
-﻿using System.Linq;
-using System.Reflection;
-using FluentAssertions;
-using NSpectator;
+﻿using System.Collections.Generic;
+using System.Linq;
 using NSpectator.Domain;
 using NSpectator.Domain.Formatters;
+using FluentAssertions;
+using NSpectator;
+// ReSharper disable once CheckNamespace
 
-/*
- * Howdy,
- * 
- * This is NSpectator's DebuggerShim.  It will allow you to use Resharper's test runner to run
- * NSpectator tests that are in the same Assembly as this class.
- */
-//[TestFixture]
-public class DebuggerShim
+/// <summary>
+/// Howdy,
+/// 
+/// <para>NSpectator's DebuggerShim allow you to use Resharper's test runner to run specs that are in the same Assembly as this class.</para>
+/// <para>You can also inherit your Program class from this class and explicitly call Debug or wrap it into any unit test.</para>
+/// <para>For more information visit https://github.com/nspectator/NSpectator/wiki </para>
+/// </summary>
+public partial class DebuggerShim
 {
-    //[Test]
     public void Debug(string tagOrClassName)
     {
         var types = GetType().Assembly.GetTypes();
@@ -23,15 +23,18 @@ public class DebuggerShim
         Debug(new SpecFinder(types, ""));
     }
 
-    public void Debug(System.Type t)
+    public static void Debug(System.Type t)
     {
         Debug(new SpecFinder(new[] { t }, ""));
     }
 
-    private void Debug(SpecFinder finder)
+    public static void Debug(IEnumerable<System.Type> types)
     {
-        // var tagsFilter = new Tags().Parse(tagOrClassName);
-        // var builder = new ContextBuilder(finder, tagsFilter, new DefaultConventions());
+        Debug(new SpecFinder(types.ToArray(), ""));
+    }
+
+    private static void Debug(SpecFinder finder)
+    {
         var builder = new ContextBuilder(finder, new DefaultConventions());
         var runner = new ContextRunner(new Tags(), new ConsoleFormatter(), false);
         var results = runner.Run(builder.Contexts().Build());
@@ -40,3 +43,5 @@ public class DebuggerShim
         results.Failures().Count().Should().Be(0, "all examples passed");
     }
 }
+
+

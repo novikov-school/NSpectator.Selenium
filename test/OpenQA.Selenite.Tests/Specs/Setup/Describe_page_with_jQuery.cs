@@ -15,12 +15,12 @@ namespace OpenQA.Selenite.Tests.Specs.Setup
     {
         void Given_page_has_jquery()
         {
-            before = () => NavigateTo<PageWithJQuery>("PageWithJQuery.html");
+            before = () => Browse<PageWithJQuery>("PageWithJQuery.html");
 
             it["should have jQuery variable"] = () =>
             {
                 // element<PageWithJQuery>().Session.HasJQuery().should_be_true();
-                element<PageWithJQuery>().Session.HasJQuery().Should().Be(true, "because there is jQuery included on page");
+                Block<PageWithJQuery>().Session.HasJQuery().Should().Be(true, "because there is jQuery included on page");
             };
         }
     }

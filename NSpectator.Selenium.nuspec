@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+    <metadata>
+        <id>NSpectator Selenium PageObjects</id>
+        <version>0.9.8</version>
+        <title>NSpectator.Selenium</title>
+        <authors>NSpectator Team</authors>
+        <owners>Jonny Novikov</owners>
+        <licenseUrl>https://github.com/nspectator/NSpectator.Selenium/blob/master/license.txt</licenseUrl>
+        <projectUrl>http://www.nspectator.org</projectUrl>
+        <iconUrl>http://nspectator.org/assets/logo.png</iconUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>NSpectator Selenium is a ready-to-use PageObjects and tools for pragmatic development of browser automation and Web user interface acceptance tests and verification. Enjoy using fluent configuration, sessions and page objects to write tests as fast as you think it should works!</description>
+        <summary>NSpectator is a toolset for .NET agile development with the xSpec (context/specification) flavor.</summary>
+        <releaseNotes>Just install package and write your own PageObjects based on build-in</releaseNotes>
+        <copyright>Copyright (c) NSpectator Development Team</copyright>
+        <language>en-US</language>
+        <tags>Selenium WebDriver browser agile testing spec fluent unit-testing</tags>
+        <dependencies>
+            <group targetFramework=".NETFramework4.5">
+                <dependency id="Newtonsoft.Json" version="8.0.3" />
+				<dependency id="Selenium.Support" version="2.53.0" />
+				<dependency id="Selenium.WebDriver" version="2.53.0" />
+            </group>
+        </dependencies>
+    </metadata>
+    <files>
+        <file src="src\OpenQA.Selenite\bin\Debug\OpenQA.Selenite.dll" target="lib\OpenQA.Selenite.dll" />
+    </files>
+</package>

@@ -71,6 +71,21 @@ namespace OpenQA.Selenite.Setup
             return Current;
         }
 
+        public static TResult WithCurrent<TResult>(Func<TSession, TResult> action)
+        {
+            if (Current == null)
+            {
+                throw new NullReferenceException(
+                    "You cannot access the CurrentBlock without first initializing the Session by calling With<TDriverEnvironment>().");
+            }
+            return action(Current);
+        }
+
+        public static TBlock NavigateTo<TBlock>(string url) where TBlock : IBlock
+        {
+            return WithCurrent(s => s.NavigateTo<TBlock>(url));
+        }
+
         private static T GetInstanceOf<T>(params object[] constructorArgs)
             where T : Session
         {

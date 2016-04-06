@@ -10,8 +10,6 @@ using FluentAssertions;
 using NUnit.Framework;
 using OpenQA.Selenite.Extensions;
 using OpenQA.Selenite.Setup;
-using OpenQA.Selenite.Setup.Environments;
-using OpenQA.Selenite.Tests.Shared.Hosting;
 using OpenQA.Selenite.Tests.Shared.Pages.Implementation;
 
 namespace OpenQA.Selenite.Tests.Specs.Pages.TableTests
@@ -21,7 +19,7 @@ namespace OpenQA.Selenite.Tests.Specs.Pages.TableTests
     {
         void before_each()
         {
-            NavigateTo<ComplexTablePage>(Url("ComplexTable.html"));
+            Browse<ComplexTablePage>(Url("ComplexTable.html"));
         }
 
         

@@ -15,7 +15,7 @@ namespace OpenQA.Selenite.Tests.Specs.Pages
     {
         void before_each()
         {
-            NavigateTo<RadioButtonsPage>("RadioButtons.html");
+            Browse<RadioButtonsPage>("RadioButtons.html");
         }
 
         void Given_test_option_does_not_exist()
@@ -24,7 +24,7 @@ namespace OpenQA.Selenite.Tests.Specs.Pages
             {
                 it["should not find any"] = () =>
                 {
-                    element<RadioButtonsPage>()
+                    Block<RadioButtonsPage>()
                         .VerifyThat(p => p.Beverages
                             .Options.WithText("Test")
                             .Should().BeEmpty());
