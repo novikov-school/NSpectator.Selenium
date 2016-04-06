@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 
-[assembly: AssemblyTitle("OzonQA Selenite Tests")]
+[assembly: AssemblyTitle("NSpectator OpenQA.Selenite Tests")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("OzonQA.Selenite.Tests")]
+[assembly: AssemblyCompany("NSpectator")]
+[assembly: AssemblyProduct("OpenQA.Selenite.Tests")]
 [assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

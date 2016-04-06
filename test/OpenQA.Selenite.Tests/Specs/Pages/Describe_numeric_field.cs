@@ -15,7 +15,7 @@ namespace OpenQA.Selenite.Tests.Specs.Pages
     {
         void before_each()
         {
-            NavigateTo<NumericFieldPage>("NumericField.html");
+            Browse<NumericFieldPage>("NumericField.html");
         }
 
         void Given_page_should_have_working_field()
@@ -24,7 +24,7 @@ namespace OpenQA.Selenite.Tests.Specs.Pages
             {
                 it["should contains entered text and number"] = () =>
                 {
-                    element<NumericFieldPage>()
+                    Block<NumericFieldPage>()
                         .Number.EnterNumber(5)
                         .VerifyThat(x => x.Number.Value.Should().Be(5))
                         .VerifyThat(x => x.Number.Text.Should().Be("5"));

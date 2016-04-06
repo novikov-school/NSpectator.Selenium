@@ -1,24 +1,27 @@
+#region [R# naming]
+// ReSharper disable ArrangeTypeModifiers
+// ReSharper disable UnusedMember.Local
+// ReSharper disable FieldCanBeMadeReadOnly.Local
+// ReSharper disable ArrangeTypeMemberModifiers
+// ReSharper disable InconsistentNaming
+#endregion
 using System.Linq;
 using FluentAssertions;
 using NUnit.Framework;
-using OpenQA.Selenite.Tests.Shared.Hosting;
-using OpenQA.Selenite.Tests.Shared.Pages.Implementation;
 using OpenQA.Selenite.Extensions;
 using OpenQA.Selenite.Setup;
-using OpenQA.Selenite.Setup.Environments;
+using OpenQA.Selenite.Tests.Shared.Pages.Implementation;
 
-namespace OpenQA.Selenite.Tests.Implementation.TableTests
+namespace OpenQA.Selenite.Tests.Specs.Pages.TableTests
 {
-    // ReSharper disable InconsistentNaming
-    [TestFixture]
-    public class Given_complex_table : HostThreadedSessionFixture
+    [TestFixture(Ignore = true)]
+    public class Given_complex_table : Spec_hosted
     {
-        public override void Before()
+        void before_each()
         {
-            Threaded<Session>
-                .With<PhantomJS>()
-                .NavigateTo<ComplexTablePage>(Url("ComplexTable.html"));
+            Browse<ComplexTablePage>(Url("ComplexTable.html"));
         }
+
         
         [TestCase("Water", false)]
         [TestCase("Beer", false)]
