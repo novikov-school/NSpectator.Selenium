@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
     <metadata>
-        <id>NSpectator Selenium PageObjects</id>
+        <id>NSpectator.Selenium</id>
         <version>0.9.8</version>
-        <title>NSpectator.Selenium</title>
+        <title>NSpectator Selenium PageObjects</title>
         <authors>NSpectator Team</authors>
         <owners>Jonny Novikov</owners>
         <licenseUrl>https://github.com/nspectator/NSpectator.Selenium/blob/master/license.txt</licenseUrl>
         <projectUrl>http://www.nspectator.org</projectUrl>
         <iconUrl>http://nspectator.org/assets/logo.png</iconUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
-        <description>NSpectator Selenium is a ready-to-use PageObjects and tools for pragmatic development of browser automation and Web user interface acceptance tests and verification. Enjoy using fluent configuration, sessions and page objects to write tests as fast as you think it should works!</description>
-        <summary>NSpectator is a toolset for .NET agile development with the xSpec (context/specification) flavor.</summary>
+        <description>NSpectator`s Selenium toolset is a ready-to-use PageObjects for pragmatic development of browser automation and Web user interface acceptance tests and verification. Enjoy using fluent configuration, sessions and page objects to write tests as fast as you think it should works!</description>
+        <summary>Toolset contains ready-to-use Selenium PageObjects, fluent configurations, session and WebDriver environment management for pragmatic automation with .NET</summary>
         <releaseNotes>Just install package and write your own PageObjects based on build-in</releaseNotes>
         <copyright>Copyright (c) NSpectator Development Team</copyright>
         <language>en-US</language>
