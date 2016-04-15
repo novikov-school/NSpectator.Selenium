@@ -1,13 +1,19 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenQA.Selenite", "src\OpenQA.Selenite\OpenQA.Selenite.csproj", "{E60BF4D9-064C-4C77-9973-A2E970C15C79}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{9E961ADF-E99B-4087-A2F1-1E4A3F18BDC4}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{9E961ADF-E99B-4087-A2F1-1E4A3F18BDC4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenQA.Selenite.Tests", "test\OpenQA.Selenite.Tests\OpenQA.Selenite.Tests.csproj", "{3339164E-07D4-440E-8D14-F8CA212BE95D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "examples", "examples", "{6DC4BDE7-CDE3-421C-802B-221D32D2DF99}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenQA.Selenite.Examples", "examples\OpenQA.Selenite.Examples\OpenQA.Selenite.Examples.csproj", "{649E00EB-9019-43C3-B28C-384AEB5847ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenQA.Selenite.Examples.Tests", "examples\OpenQA.Selenite.Examples.Tests\OpenQA.Selenite.Examples.Tests.csproj", "{B4FB11F0-5642-432E-934A-76EC189A28B9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,11 +29,21 @@ Global
 		{3339164E-07D4-440E-8D14-F8CA212BE95D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3339164E-07D4-440E-8D14-F8CA212BE95D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3339164E-07D4-440E-8D14-F8CA212BE95D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{649E00EB-9019-43C3-B28C-384AEB5847ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{649E00EB-9019-43C3-B28C-384AEB5847ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{649E00EB-9019-43C3-B28C-384AEB5847ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{649E00EB-9019-43C3-B28C-384AEB5847ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4FB11F0-5642-432E-934A-76EC189A28B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4FB11F0-5642-432E-934A-76EC189A28B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4FB11F0-5642-432E-934A-76EC189A28B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4FB11F0-5642-432E-934A-76EC189A28B9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{3339164E-07D4-440E-8D14-F8CA212BE95D} = {9E961ADF-E99B-4087-A2F1-1E4A3F18BDC4}
+		{649E00EB-9019-43C3-B28C-384AEB5847ED} = {6DC4BDE7-CDE3-421C-802B-221D32D2DF99}
+		{B4FB11F0-5642-432E-934A-76EC189A28B9} = {6DC4BDE7-CDE3-421C-802B-221D32D2DF99}
 	EndGlobalSection
 EndGlobal
