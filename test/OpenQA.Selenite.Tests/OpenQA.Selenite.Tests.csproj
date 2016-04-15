@@ -74,14 +74,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CallStackTests.cs" />
-    <Compile Include="Configuration\ConfigurationPathComparerTest.cs" />
-    <Compile Include="Configuration\ConfigurationPathTest.cs" />
-    <Compile Include="Configuration\ConfigurationProviderExtensions.cs" />
-    <Compile Include="Configuration\ConfigurationTest.cs" />
-    <Compile Include="Configuration\Json\ArrayTest.cs" />
-    <Compile Include="Configuration\Json\JsonConfigurationExtensionsTest.cs" />
-    <Compile Include="Configuration\Json\JsonConfigurationTest.cs" />
-    <Compile Include="Configuration\TestStreamHelpers.cs" />
     <Compile Include="DebuggerShim.cs" />
     <Compile Include="Extensions\FilteringTests.cs" />
     <Compile Include="Extensions\VerificationTests.cs" />
@@ -97,6 +89,9 @@
     <Compile Include="Implementation\TestFieldTests.cs" />
     <Compile Include="KeyTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="$(SolutionDir)SharedAssemblyInfo.cs">
+      <Link>Properties\SharedAssemblyInfo.cs</Link>
+    </Compile>
     <Compile Include="Setup\DriverEnvironmentTests.cs" />
     <Compile Include="Setup\SessionTests\Given_default_implementation_of_ISettings.cs" />
     <Compile Include="Setup\SessionTests\given_environment_and_custom_settings_when_capturing.cs" />

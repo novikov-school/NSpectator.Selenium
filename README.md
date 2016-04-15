@@ -9,6 +9,20 @@
 
 NSpectator Selenium Integration is ready-to-use solution for Web UI Automated testing using .NET. 
 
+## Installation
+
+We recommended installing [the NuGet package](https://www.nuget.org/packages/NSpectator.Selenium). Install on the command line from your solution directory or use the Package Manager console in Visual Studio:
+
+```powershell
+
+PM> Install-Package NSpectator.Selenium
+
+```
+
+## Usage
+
+See [Examples](https://github.com/nspectator/NSpectator.Selenium/tree/master/examples) for complete guide.
+
 ### Issues
 
 Feature requests, bugs & issues are handled on [NSpectator Youtrack InCloud](https://nspectator.myjetbrains.com/youtrack/issues/SE?q=%23Unresolved+)

@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
     <metadata>
         <id>NSpectator.Selenium</id>
-        <version>0.9.8</version>
+        <version>1.0.0</version>
         <title>NSpectator Selenium PageObjects</title>
         <authors>NSpectator Team</authors>
         <owners>Jonny Novikov</owners>
@@ -25,6 +25,7 @@
         </dependencies>
     </metadata>
     <files>
+        <file src="license.txt" />
         <file src="src\OpenQA.Selenite\bin\Debug\OpenQA.Selenite.dll" target="lib\OpenQA.Selenite.dll" />
     </files>
 </package>
