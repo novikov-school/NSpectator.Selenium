@@ -84,10 +84,6 @@
       <HintPath>..\..\packages\Newtonsoft.Json.8.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="OpenQA.Selenite, Version=0.9.8.0, Culture=neutral, processorArchitecture=AMD64">
-      <HintPath>..\..\packages\NSpectator.Selenium.0.9.8\lib\OpenQA.Selenite.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
@@ -126,6 +122,12 @@
   <ItemGroup>
     <None Include="packages.config" />
     <None Include="site\site.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\OpenQA.Selenite\OpenQA.Selenite.csproj">
+      <Project>{e60bf4d9-064c-4c77-9973-a2e970c15c79}</Project>
+      <Name>OpenQA.Selenite</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
