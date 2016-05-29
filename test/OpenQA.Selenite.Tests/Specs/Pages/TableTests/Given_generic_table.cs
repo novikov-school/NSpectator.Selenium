@@ -11,7 +11,7 @@ namespace OpenQA.Selenite.Tests.Specs.Pages.TableTests
 {
     // ReSharper disable InconsistentNaming
 
-    [TestFixture(Ignore = true)]
+    [TestFixture, Ignore("Broken page")]
     public class Given_generic_table : HostThreadedSessionFixture
     {
         public override void Before()
