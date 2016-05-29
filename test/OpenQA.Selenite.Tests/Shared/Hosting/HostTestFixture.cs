@@ -21,14 +21,14 @@ namespace OpenQA.Selenite.Tests.Shared.Hosting
             BaseUrl = baseUrl;
         }
 
-        [TestFixtureSetUp]
+        [OneTimeSetUp]
         public virtual void Init()
         {
             _host = new Host(new Uri(BaseUrl));
             _host.Start();
         }
 
-        [TestFixtureTearDown]
+        [OneTimeTearDown]
         public virtual void Dispose()
         {
             _host.Stop();

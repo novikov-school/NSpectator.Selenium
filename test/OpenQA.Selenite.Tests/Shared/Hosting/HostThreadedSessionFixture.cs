@@ -8,7 +8,7 @@ namespace OpenQA.Selenite.Tests.Shared.Hosting
     [TestFixture]
     public class HostThreadedSessionFixture : HostTestFixture, ITestSpec
     {
-        [TestFixtureSetUp]
+        [OneTimeSetUp]
         public override void Init()
         {
             base.Init();
@@ -16,7 +16,7 @@ namespace OpenQA.Selenite.Tests.Shared.Hosting
             Before();
         }
 
-        [TestFixtureTearDown]
+        [OneTimeTearDown]
         public override void Dispose()
         {
             After();

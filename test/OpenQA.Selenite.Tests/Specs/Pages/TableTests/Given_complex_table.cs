@@ -14,7 +14,7 @@ using OpenQA.Selenite.Tests.Shared.Pages.Implementation;
 
 namespace OpenQA.Selenite.Tests.Specs.Pages.TableTests
 {
-    [TestFixture(Ignore = true)]
+    [TestFixture, Ignore("Broken page")]
     public class Given_complex_table : Spec_hosted
     {
         void before_each()

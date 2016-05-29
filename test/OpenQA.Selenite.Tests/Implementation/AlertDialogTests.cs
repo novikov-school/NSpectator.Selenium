@@ -10,7 +10,7 @@ namespace OpenQA.Selenite.Tests.Implementation
 {
     // ReSharper disable InconsistentNaming
     
-    [TestFixture(Ignore = true)]
+    [TestFixture, Ignore("Broken page")]
     public class Given_dialogs : HostThreadedSessionFixture
     {
         public override void Before()
