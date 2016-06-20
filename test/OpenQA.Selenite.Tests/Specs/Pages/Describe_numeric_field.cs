@@ -20,9 +20,9 @@ namespace OpenQA.Selenite.Tests.Specs.Pages
 
         void Given_page_should_have_working_field()
         {
-            context["When entering number then"] = () =>
+            Context["When entering number then"] = () =>
             {
-                it["should contains entered text and number"] = () =>
+                It["should contains entered text and number"] = () =>
                 {
                     Block<NumericFieldPage>()
                         .Number.EnterNumber(5)

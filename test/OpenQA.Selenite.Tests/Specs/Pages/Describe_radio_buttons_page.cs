@@ -20,9 +20,9 @@ namespace OpenQA.Selenite.Tests.Specs.Pages
 
         void Given_test_option_does_not_exist()
         {
-            context["When selecting by text"] = () =>
+            Context["When selecting by text"] = () =>
             {
-                it["should not find any"] = () =>
+                It["should not find any"] = () =>
                 {
                     Block<RadioButtonsPage>()
                         .VerifyThat(p => p.Beverages
